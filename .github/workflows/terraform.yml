@@ -16,8 +16,8 @@ env:
   ROOT_PATH: '${{ github.workspace}}/src/terraform'
 
 jobs:
-  terraform:
-    name: 'Terraform Init'
+  terraform_plan:
+    name: 'Terraform Plan'
     runs-on: ubuntu-latest
     #environment: production
 
