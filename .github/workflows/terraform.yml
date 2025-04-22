@@ -53,6 +53,7 @@ jobs:
   terraform_apply:
     name: 'Terraform apply'
     runs-on: ubuntu-latest
+    needs: [Terraform plan]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
