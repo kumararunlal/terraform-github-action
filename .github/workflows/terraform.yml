@@ -9,7 +9,7 @@ on:
     - main
 
 env:
-  ROOT_PATH: '../../src'
+  ROOT_PATH: '${{ github.workspace}}/src/terraform'
 
 jobs:
   terraform:
